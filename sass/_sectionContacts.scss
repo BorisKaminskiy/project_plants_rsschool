@@ -1,0 +1,143 @@
+.contacts {
+  display: flex;
+  padding-top: 53px;
+}
+
+.contacts-title {
+  padding-top: 10px;
+  margin-right: 60px;
+}
+
+.contacts-image {
+  width: 400px;
+  height: 497px;
+  margin-right: 103px;
+}
+
+.contacts-aside {
+  width: 450px;
+}
+
+.contacts-city-items {
+ display: none;
+}
+
+.contacts-city-items-active {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  padding: 27px 50px 31px 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  background-color: #DCE9D9;
+  font-family: "Inter-Regular";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 4.0rem;
+  letter-spacing: 0.05em;
+  color: #499A18;
+  animation: show 0.7s;
+ }
+
+@keyframes show {
+ from {
+ opacity: 0;
+ }
+ to {
+ opacity: 1;
+ }
+}
+
+.contacts-city-item {
+  border-bottom: 1px solid #D9D9D9;
+  cursor: pointer;
+}
+
+.contacts-city-item:hover {
+  border-bottom: 1px solid $color-gray;
+  color: $color-gray;
+  transition: all linear 0.3s;
+}
+
+.contacts-card {
+  display: none;
+}
+
+.contacts-card-active {
+  width: 448px;
+  margin-top: 47px;
+  padding: 17px 0 32px 33px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 5px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: $color-bg;
+  font-family: "Inter-Regular";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 4.0rem;
+  letter-spacing: 0.05em;
+  animation: show 0.7s;
+}
+
+.contacts-card-item {
+  width: 100%;
+  display: flex;
+}
+
+.contacts-card-title {
+  width: 137px;
+}
+
+.contacts-card-value {
+  color: $color-gray;
+}
+
+@media (max-width: 1439px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: calc(1.94vw + 25.14px);
+  }
+
+  .contacts-title {
+    order: 0;
+    padding-top: 0;
+    padding-bottom: 60px;
+    margin: 0;
+  }
+
+  .contacts-image {
+    order: 2;
+    width: calc(29.76vw - 28.57px);
+    height: calc(37.05vw - 36.57px);
+    margin-right: 0;
+  }
+
+  .contacts-aside {
+    order: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    padding-top: calc(3.87vw + 10.31px);
+    padding-bottom: 20px;
+  }
+
+  .contacts-aside {
+    width: calc(38.66vw + 153.09px);
+    padding-top: 0 17px 0 17px;
+  }
+
+  .contacts-title {
+    padding-top: calc(-5.16vw + 99.59px);
+  }
+
+  .contacts-card-active {
+    width: 100%;
+  }
+}

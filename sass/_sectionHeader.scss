@@ -1,0 +1,86 @@
+.header {
+  width: 100%;
+  height: 134px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $color-black;
+}
+
+.header-logo {
+  display: flex;
+  align-items: flex-end;
+  svg {
+    margin-bottom: 3px;
+  }
+}
+
+.header-logo-text {
+  font-family: "Inika-Regular";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+}
+
+.header-navigation-mobile {
+  position: absolute;
+  display: flex!important;
+  top: 100px;
+  right: 28px;
+  padding: 0 30px;
+  background-color: rgba(237, 242, 236, 0.93);
+  border: 1px solid $color-gray;
+  border-radius: 20px;
+  animation: go 1s;
+}
+
+@keyframes go {
+ from {
+ right: 0;
+ }
+ to {
+right: 28px;
+ }
+}
+
+.header-navigation-items {
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  column-gap: 46px;
+}
+
+.header-navigation-items-mobile {
+  flex-direction: column;
+}
+
+.header-navigation-item {
+  font-family: "Inika-Regular";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 5.0rem;
+  color: inherit;
+  transition: color linear 0.2s;
+}
+
+.header-navigation-item:hover  {
+  text-shadow: 0 0 .65px $color-orange, 0 0 .65px $color-orange;
+  color: $color-orange;
+}
+
+.header-navigation-item:active {
+  text-shadow: 0 0 .65px $color-orange, 0 0 .65px $color-orange;
+  color: $color-orange;
+}
+
+@media (max-width: 1439px) {
+  .header {
+    height: calc(2.53vw + 97.57px);
+   }
+}
+
+@media (max-width: 700px) {
+  .header-navigation {
+    display: none;
+  }
+}

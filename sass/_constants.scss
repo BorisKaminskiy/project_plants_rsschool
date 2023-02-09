@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "Inika-Regular";
+  src: url("./assets/fonts/Inika-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inika-Bold";
+  src: url("./assets/fonts/Inika-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("./assets/fonts/Inter-Regular.ttf");
+}
+
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("./assets/fonts/Inter-Bold.ttf");
+}
+
+$color-orange: #E06733;
+$color-green: #499A18;
+$color-lightgray: #E3E1D5;
+$color-gray: #717171;
+$color-darkgray: #636060;
+$color-black: #010201;
+$color-bg: #EDF2EC;
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Inter-Bold";
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 5.0rem;
+  color: $color-gray;
+}
+
+h2 {
+  font-family: "Inter-Bold";
+  font-size: 4.0rem;
+  font-weight: 700;
+  line-height: 5.0rem;
+}
+
+h3 {
+  font-family: "Inika-Regular";
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 5.2rem;
+  color: $color-green;
+}
+
+h4 {
+  font-family: 'Inter-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.0rem;
+  line-height: 2.0rem;
+  color: $color-orange;
+}
+
+h5 {
+  font-family: "Inika-Bold";
+  font-size: 4.0rem;
+  font-weight: 700;
+  line-height: 5.2rem;
+  color: $color-green;
+}
+
+
+.bg-wrapper {
+  width: 100vw;
+  background-color: $color-bg;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 109px;
+  padding-right: 109px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 1439px) {
+  h1 {
+    font-size: calc(1.49vw + 2.357rem);
+  }
+
+  h2 {
+    font-size: calc(0.74vw + 2.93rem);
+    line-height: calc(1.04vw + 3.4rem);
+}
+
+
+  h3 {
+    font-size: calc(0.74vw + 2.93rem);
+    line-height: calc(0.89vw + 3.91rem);
+  }
+
+  .wrapper {
+    max-width: 100vw;
+    padding-left: calc(8.78vw - 17.43px);
+    padding-right: calc(8.78vw - 17.43px);
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding-left: calc(6.44vw + 0.52px);
+    padding-right: calc(6.44vw + 0.52px);
+  }
+
+  .h1 {
+    font-size: calc(2.58vw + 1.521rem);
+    line-height: calc(3.87vw + 2.031rem);
+  }
+
+  .h5 {
+    font-size: calc(3.87vw + 1rem);
+    line-height: calc(4.9vw + 1.44rem);
+  }
+}
+
+@media (max-width: 379px) {
+  html {
+    display: none;
+  }
+}
+
